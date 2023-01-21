@@ -16,7 +16,7 @@ form.addEventListener("submit", (event) => {
           secondName: secondNameValue.value,
           phone: phoneValue.value,
           email: emailValue.value,
-          agree: agreeValue.value
+          agree: agreeValue.checked
       }),
   })
 
