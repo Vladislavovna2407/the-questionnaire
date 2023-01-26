@@ -1,10 +1,15 @@
 const form = document.querySelector(".form");
+let nameValue = document.querySelector('#name');
+let secondNameValue = document.querySelector('#secondName');
+let phoneValue = document.querySelector('#phone');
+let emailValue = document.querySelector('#email');
+let agreeValue = document.querySelector('#agree');
+
 form.addEventListener("submit", (event) => {
   // Предотвращает действие браузера по умолчанию. В данном случае — отправку формы
   // https://learn.javascript.ru/default-browser-action
   event.preventDefault();
-  event.preventDefault();
-  fetch('http://46.21.248.81:3001/user', {
+  fetch(`https://polinashneider.space/`, {
       method: 'POST',
       headers: {
           'Accept': 'application/json',
@@ -30,11 +35,6 @@ form.addEventListener("submit", (event) => {
 });
 
 
-let nameValue = document.querySelector('#name');
-let secondNameValue = document.querySelector('#secondName');
-let phoneValue = document.querySelector('#phone');
-let emailValue = document.querySelector('#email');
-let agreeValue = document.querySelector('#agree');
 
 
 fetch('http://46.21.248.81:3001/my-users', {
