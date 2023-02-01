@@ -9,12 +9,12 @@ form.addEventListener("submit", (event) => {
   // Предотвращает действие браузера по умолчанию. В данном случае — отправку формы
   // https://learn.javascript.ru/default-browser-action
   event.preventDefault();
-  fetch('https://polinashneider.space/user', {
+  fetch('http://46.21.248.81:3001/user', {
       method: 'POST',
       headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json',
-          'Authorization': 'Bearer: PolinaShneider'
+          'Authorization': 'Bearer: Vladislavovna2407'
       },
       body: JSON.stringify({
           name: nameValue.value,
@@ -37,11 +37,11 @@ form.addEventListener("submit", (event) => {
 
 
 
-fetch('https://polinashneider.space/last-user', {
+fetch('http://46.21.248.81:3001/my-users', {
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json',
-            'Authorization': 'Bearer: PolinaShneider'
+            'Authorization': 'Bearer: Vladislavovna2407'
         },
 
     })
