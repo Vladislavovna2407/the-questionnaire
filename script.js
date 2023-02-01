@@ -9,7 +9,7 @@ form.addEventListener("submit", (event) => {
   // Предотвращает действие браузера по умолчанию. В данном случае — отправку формы
   // https://learn.javascript.ru/default-browser-action
   event.preventDefault();
-  fetch('https://polinashneider.space/', {
+  fetch('https://polinashneider.space/user', {
       method: 'POST',
       headers: {
           'Accept': 'application/json',
@@ -37,7 +37,7 @@ form.addEventListener("submit", (event) => {
 
 
 
-fetch('https://polinashneider.space/', {
+fetch('https://polinashneider.space/user', {
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json',
