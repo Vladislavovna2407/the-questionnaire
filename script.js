@@ -37,7 +37,7 @@ form.addEventListener("submit", (event) => {
 
 
 
-fetch('http://46.21.248.81:3001/', {
+fetch('http://46.21.248.81:3001/my-users', {
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json',
